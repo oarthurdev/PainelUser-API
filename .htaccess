@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+    Options -MultiViews
+
+    RewriteEngine On
+    #RewriteBase /path/to/app
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [QSA,L]
+</IfModule>
+
+<Files "index.php">
+  Header set Access-Control-Allow-Origin "*"
+  Header set Access-Control-Allow-Methods: "GET,POST,OPTIONS,DELETE,PUT"
+  Header set Access-Control-Allow-Headers "Token, Access-Control-Allow-Origin, Authorization, Origin, X-Requested-With, Content-Type, Accept"
+</Files>

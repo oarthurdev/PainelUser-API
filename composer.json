@@ -1,0 +1,26 @@
+{
+	"require": {
+		"silex/silex": "dev-master",
+		"twig/twig": ">=1.8,<2.0-dev",
+		"localgod/pdo-service-provider" : "1.0.0",
+		"symfony/twig-bridge": "~2.3",
+		"doctrine/dbal": "2.2.*",
+		"twitter/bootstrap"     : "3.1.1",
+		"symfony/form":	"~2.3",
+		"symfony/validator": "~2.3",
+		"symfony/config": "~2.3",
+		"symfony/locale": "~2.3",
+		"symfony/security": "~2.8.28",
+		"swiftmailer/swiftmailer": "^6.0",
+		"phpmailer/phpmailer": "~6.0"
+	},
+	"require-dev": {
+		"heroku/heroku-buildpack-php": "*"
+	  },
+
+  "autoload": {
+    "psr-0": {
+        "": "src/"
+    }
+}
+}
